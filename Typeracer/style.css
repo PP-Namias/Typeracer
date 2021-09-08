@@ -1,0 +1,193 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-size: 100% 100%;
+    background-position: 0px 0px,0px 0px,0px 0px,0px 0px,0px 0px;
+    background-image: radial-gradient(49% 81% at 45% 47%, #FFE20345 0%, #073AFF00 100%),radial-gradient(113% 91% at 17% -2%, #FF5A00FF 1%, #FF000000 99%),radial-gradient(142% 91% at 83% 7%, #FFDB00FF 1%, #FF000000 99%),radial-gradient(142% 91% at -6% 74%, #FF0049FF 1%, #FF000000 99%),radial-gradient(142% 91% at 111% 84%, #FF7000FF 0%, #FF0000FF 100%);
+}
+    /* ==================================================
+                    Content Div
+================================================== */
+.content {
+    background-color: #E7CCA8;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    width: 500px;
+    top: 10%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -10%);
+    transform: translate(-50%, -10%);
+    position: absolute;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.content-heading {
+    margin-bottom: 20px;
+}
+
+.red {
+    color: #ff0000;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.yellow {
+    color: #ffff00;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.green {
+    color: #0000ff;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+/* ==================================================
+                    Container Div
+================================================== */
+
+.container {
+    width: 500px;
+    background-color: #f0d1aa;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    top: 65%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -65%);
+    transform: translate(-50%, -65%);
+    position: absolute;
+    padding: 20px;
+    border-radius: 10
+}
+
+.card-heading {
+    background: #CDAA7D;
+    border-radius: 10px;
+    padding: 5px;
+    margin-bottom: 40px;
+}
+
+.card-para {
+    margin-top: 15px;
+}
+
+#word {
+    margin: 10px 0;
+}
+
+#text {
+    width: 300px;
+    border-radius: 10px;
+    font-size: 18px;
+    padding: 10px 15px;
+    border: none;
+}
+
+.time-container {
+    position: absolute;
+    top: 75px;
+    left: 25px;
+    background-color: #ff0015;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.score-container {
+    position: absolute;
+    top: 75px;
+    right: 25px;
+    background-color: #66ff00;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.game-over {
+    background-color: inherit;
+    display: none;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    flex-direction: column;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    border-radius: 10px;
+}
+
+.result-head {
+    margin-bottom: 20px;
+}
+
+.result-para {
+    margin-bottom: 5px;
+}
+
+button {
+    padding: 6px 10px;
+    background-color: burlywood;
+    border: 1px solid black;
+    border-radius: 10px;
+    color: #000000;
+    margin-top: 5px;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: rgb(194, 154, 101);
+    border: 1px solid black;
+    color: #201e1e;
+}
+
+/* ==================================================
+                    Responsive Design
+================================================== */
+
+@media screen and (max-width:540px) {
+    .content {
+        width: 400px;
+    }
+
+    .red,
+    .yellow,
+    .green {
+        font-size: 16px;
+    }
+
+    .container {
+        width: 400px;
+
+    }
+}
+
+@media screen and (max-width:420px) {
+    .content {
+        width: 350px;
+    }
+
+    .red,
+    .yellow,
+    .green {
+        font-size: 14px;
+    }
+
+    .container {
+        width: 350px;
+        top: 75%;
+        left: 50%;
+        -webkit-transform: translate(-50%, -75%);
+        transform: translate(-50%, -75%);
+    }
+}
